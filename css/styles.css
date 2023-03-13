@@ -6,6 +6,8 @@
 /* Цвет текста в футере #F4F4FD */
 
 /* Стилизация header */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap');
 
 
 :root {
@@ -17,7 +19,7 @@
 
 body {
     background-color: var(--primary-background-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: var(--primary-text-color);
     width: 1440px;
     height: 2592px;
