@@ -77,7 +77,6 @@ p {
 .hero {
     background-color: #2e2f42
 }
-
 .hero-title {
     font-style: normal;
     font-weight: 700;
@@ -86,11 +85,30 @@ p {
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+}.hero-button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 16px 32px;
+        gap: 10px;
+        width: 169px;
+            height: 56px;
+            left: 20px;
+            top: 20px;
 }
-.hero-button{font-family: "Roboto", sans-serif;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.04em;
-color: #ffffff;
-cursor: pointer;}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #404bbf;
+    color: #FFFFFF
+}
