@@ -15,6 +15,7 @@
     --primary-background-color: #FFFFFF;
     --primary-title-color: #2E2F42;
     --primary-background2-color: #2E2F42;
+    --primary-footer-text-color: #f4f4fd;
 }
 
 body {
@@ -198,11 +199,20 @@ color: var(--primary-title-color);}
 /**----------------------------< !-- Подвал страницы -->--------------------**/
 .footer {
     background-color: var(--primary-background2-color);}
+.footer {}
 
 .logo {}
 
 .link {}
+.footer-span,
+.footer-text {
+    color: var(--primary-footer-text-color);
+}
 
-.footer-text {}
+.footer-text {font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    /* or 150% */
 
-.text {}
+    letter-spacing: 0.02em;}
+    
