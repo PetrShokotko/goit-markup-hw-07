@@ -199,7 +199,8 @@ span {
 }
 
 .title {}
-.team-list{.team-list-item {
+.team-list{}
+.team-list-item {
     background-color: #FFFFFF;
 }
 
