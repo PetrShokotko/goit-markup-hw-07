@@ -56,8 +56,9 @@ p {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2e2f42;
+    color: var(--primary-title-color);
 }
+.navigaion-item{color:var(--primary-title-color);}
 
 .link:hover,
 .link:focus {
@@ -173,7 +174,7 @@ font-weight: 400;
 color: var(--primary-title-color);}
 .title {}
 
-.team-list {background-color: var(--primary-background-color);}
+.team-list {background-color:#FFFFFF;}
 
 .list {}
 
@@ -215,4 +216,43 @@ color: var(--primary-title-color);}
     /* or 150% */
 
     letter-spacing: 0.02em;}
-    
+/**----------------------Portfolio-----------------**/
+/**Кнопки**/
+.portfolio {}
+
+.portfolio-section {}
+
+.page-nav {}
+
+.list {}
+
+.portfolio-button {
+    background-color: #F4F4FD;
+    color: #4D5AE5;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    /* identical to box height, or 150% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    cursor: pointer
+}
+
+.portfolio button {
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+        flex: none;
+            order: 1;
+                flex-grow: 0;
+            }
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    color: #FFFFFF;
+    background: #404BBF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
