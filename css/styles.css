@@ -199,13 +199,13 @@ span {
 }
 
 .title {}
-.team-list{
+.team-list{.team-list-item {
     background-color: #FFFFFF;
 }
 
 .list {}
+
 .team-list-title {
-    background-color: #FFFFFF;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -215,10 +215,12 @@ span {
     color: var(--primary-title-color);
 }
 
-.team-text {
+.team-list-item {
     background-color: #FFFFFF;
-    color: var(--primary-text-color);
-    font-size: 16px;
+}
+
+.team-text {
+    color: var(--primary-text-color);    font-size: 16px;
     line-height: 1.5;
     /* identical to box height, or 150% */
 
