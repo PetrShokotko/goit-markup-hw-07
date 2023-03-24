@@ -39,7 +39,7 @@ body {
 }
 
 /**Контейнера компоненты**/
-.conteiner {
+.container {
     max-width: 1158px;
 padding: 0 15px;
 margin: 0 auto;
@@ -220,15 +220,23 @@ display: inline-block;
 }
 
 /**----------------- < !-- Предложения --> ---------------**/
-.features {}
+.features {
+    padding: 120px 0;
+}
 
 .freatures-title {}
 
-.features-list {}
+.features-list {
+    display: flex;
+    justify-content: space-between;
+}
+.features-list-item{max-width: 264px;}
 
 .list {}
 
 .features-list-title {
+    margin-bottom: 8px;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -249,9 +257,11 @@ display: inline-block;
 .text {}
 
 /**----------- < !-- Продукты компании --> --------**/
-.product {}
+.product {padding-bottom: 120px;}
 
 .product-title {
+    margin-bottom: 72px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -264,6 +274,8 @@ display: inline-block;
 
     color: var(--primary-title-color);
 }
+.product-list{display: flex;
+justify-content: space-between;}
 
 .title {}
 
