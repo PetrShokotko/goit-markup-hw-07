@@ -35,9 +35,87 @@ body {
     text-decoration: none;
 }
 
-p {
+.text {
     color: var(--primary-text-color);
-    /**- Шапка страницы -**/
+}
+
+/**Контейнера компоненты**/
+.conteiner {
+    max-width: 1158px;
+padding: 0 15px;
+margin: 0 auto;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--primary-title-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/**- Шапка страницы -**/
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}.header-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-box {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-list {
+    display: flex;
+    align-items: center;
+    margin-left: 76px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.navigation-list a {
+    color: var(--primary-title-color);
+}
+
+.navigation-item:not(:last-child) {
+    margin-right: 40px;
 }
 
 .logo {
@@ -48,32 +126,40 @@ p {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
-
+.logo a{padding-left: 156px;}
 span {
     color: #2e2f42;
 }
-
 .navigation-list {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--primary-title-color);
 }
 
-.navigaion-item {
-    color: var(--primary-title-color);
-}
 
 .link:hover,
 .link:focus {
     color: #404bbf;
 }
-
 .address {
+    margin-left: auto;
     font-style: normal;
+}
+
+.address-list {
+    display: flex;
+}
+.address-item{
+display: block;
+padding-top: 24px;
+padding-bottom: 24px}
+
+.address-item:nth-child(1) {
+    margin-right: 40px;
 }
 
 .address a {
@@ -81,7 +167,6 @@ span {
     letter-spacing: 0.02em;
     color: #434455;
 }
-
 .address a:hover,
 .address a:focus {
     color: #404bbf
@@ -89,10 +174,19 @@ span {
 
 /**--------------- Херо секция -------------**/
 .hero {
-    background-color: #2e2f42
+    background-color: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
 }
 
 .hero-title {
+    margin-bottom: 48px;
+    width: 496px;
+
+    margin-left: auto;
+    margin-right: auto;
+
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
@@ -199,7 +293,9 @@ span {
 }
 
 .title {}
-.team-list{}
+
+.team-list {}
+
 .team-list-item {
     background-color: #FFFFFF;
 }
@@ -221,7 +317,8 @@ span {
 }
 
 .team-text {
-    color: var(--primary-text-color);    font-size: 16px;
+    color: var(--primary-text-color);
+    font-size: 16px;
     line-height: 1.5;
     /* identical to box height, or 150% */
 
