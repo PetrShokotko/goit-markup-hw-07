@@ -338,7 +338,7 @@ justify-content: space-between;}
 }
 
 .team-text {
-    margin-bottom: 32px;
+    padding-bottom: 32px;
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.5;
@@ -368,7 +368,7 @@ justify-content: space-between;}
 }
 
 .footer-text {
-    padding-top: 17.5px;
+    margin-top: 17.5px;
     width: 266px;
     font-weight: 400;
     font-size: 16px;
