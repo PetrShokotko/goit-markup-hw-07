@@ -352,7 +352,9 @@ justify-content: space-between;}
 /**----------------------------< !-- Подвал страницы -->--------------------**/
 .footer {
     background-color: var(--primary-background2-color);
+    padding: 100px 0;
 }
+.footer-container{max-width: 264;height: 112px;}
 
 .footer {}
 
@@ -366,6 +368,8 @@ justify-content: space-between;}
 }
 
 .footer-text {
+    padding-top: 17.5px;
+    width: 266px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
