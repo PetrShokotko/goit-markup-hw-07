@@ -72,6 +72,8 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .visually-hidden {
@@ -269,13 +271,20 @@ display: inline-block;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-
     /* NAVY BLUE */
 
     color: var(--primary-title-color);
 }
-.product-list{display: flex;
-justify-content: space-between;}
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+}
+
+.product-list-item {
+    width: calc(33.33% - 24px);
+}
 
 .title {}
 
@@ -308,7 +317,6 @@ justify-content: space-between;}
     justify-content: space-between;
     padding-bottom: 120px;
 }
-
 .team-list-title {
     margin-top: 32px;
     margin-bottom: 8px;
@@ -316,6 +324,7 @@ justify-content: space-between;}
 
 
 .team-list-item {
+    width: calc(25% - 24px);
     background-color: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -331,10 +340,6 @@ justify-content: space-between;}
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--primary-title-color);
-}
-
-.team-list-item {
-    background-color: #FFFFFF;
 }
 
 .team-text {
@@ -381,10 +386,13 @@ justify-content: space-between;}
 /**----------------------Portfolio-----------------**/
 /**Кнопки**/
 .portfolio {}
+.portfolio-section {display: flex;
+    padding-top: 96px;}
 
-.portfolio-section {}
-
-.page-nav {}
+.page-nav {display: flex;
+    justify-content: center;
+    gap: 24px;
+}
 
 .list {}
 
@@ -403,8 +411,7 @@ justify-content: space-between;}
     letter-spacing: 0.04em;
     cursor: pointer
 }
-
-.portfolio button {
+.portfolio-button {
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     flex: none;
