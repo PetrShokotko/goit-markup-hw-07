@@ -110,13 +110,10 @@ img {
     margin-left: 76px;
     padding-top: 15px;
     padding-bottom: 15px;
+    gap: 40px;
 }
 .navigation-list a {
     color: var(--primary-title-color);
-}
-
-.navigation-item:not(:last-child) {
-    margin-right: 40px;
 }
 
 .logo {
@@ -153,15 +150,16 @@ span {
 
 .address-list {
     display: flex;
+    gap: 40px;
 }
 .address-item{
 display: block;
-padding-top: 24px;
-padding-bottom: 24px}
 
-.address-item:nth-child(1) {
-    margin-right: 40px;
+padding-top: 24px;
+padding-bottom: 24px
 }
+
+
 
 .address a {
     line-height: 1.5;
@@ -234,8 +232,6 @@ display: inline-block;
 }
 .features-list-item{max-width: 264px;}
 
-.list {}
-
 .features-list-title {
     margin-bottom: 8px;
 
@@ -287,9 +283,6 @@ display: inline-block;
 }
 
 .title {}
-
-.list {}
-
 /**---------------< !-- фотографии сотрудников компании -->------------**/
 .team {
     background-color: #F4F4FD
@@ -329,8 +322,6 @@ display: inline-block;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
-
-.list {}
 
 .team-list-title {
     font-weight: 500;
@@ -386,38 +377,36 @@ display: inline-block;
 /**----------------------Portfolio-----------------**/
 /**Кнопки**/
 .portfolio {}
-.portfolio-section {display: flex;
-    padding-top: 96px;}
 
-.page-nav {display: flex;
-    justify-content: center;
-    gap: 24px;
+.portfolio-section {
+    padding-top: 96px;
 }
 
-.list {}
+.page-nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
 
 .portfolio-button {
+    padding: 12px 24px;
     background-color: #F4F4FD;
     color: #4D5AE5;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.5;
     /* identical to box height, or 150% */
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
-    cursor: pointer
-}
-.portfolio-button {
+    cursor: pointer;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     flex: none;
     order: 1;
     flex-grow: 0;
 }
+
 
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -433,11 +422,14 @@ display: inline-block;
 
 .page-nav {}
 
-.list {}
-
 .portfolio-button {}
 
-.portfolio-list {}
+.portfolio-list {display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+
+}
+.product-list-item{width: calc ((100%-48px)/3);}
 
 .link {}
 
