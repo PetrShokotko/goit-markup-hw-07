@@ -22,8 +22,6 @@ body {
     background-color: var(--primary-background-color);
     font-family: "Roboto", sans-serif;
     color: var(--primary-text-color);
-    height: 2592px;
-
 }
 
 .list {
@@ -164,19 +162,12 @@ span {
 
 .address-item {
     display: block;
-
+    line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
     padding-top: 24px;
     padding-bottom: 24px
 }
-
-
-
-.address a {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
 .address a:hover,
 .address a:focus {
     color: #404bbf
@@ -236,8 +227,6 @@ span {
     padding: 120px 0;
 }
 
-.freatures-title {}
-
 .features-list {
     display: flex;
     justify-content: space-between;
@@ -266,14 +255,10 @@ span {
     /* or 150% */
     letter-spacing: 0.02em;
 }
-
-.text {}
-
 /**----------- < !-- Продукты компании --> --------**/
 .product {
     padding-bottom: 120px;
 }
-
 .product-title {
     margin-bottom: 72px;
 
@@ -298,16 +283,15 @@ span {
 .product-list-item {
     width: calc(33.33% - 24px);
 }
-
-.title {}
-
 /**---------------< !-- фотографии сотрудников компании -->------------**/
-.team {
-    background-color: #F4F4FD
+.team-section {
+    background-color: #F4F4FD;
+    padding-top:120px;
+    padding-bottom: 120px;
 }
 
 .team-title {
-    padding-top: 120px;
+    
     padding-bottom: 72px;
 
     font-weight: 700;
@@ -321,12 +305,9 @@ span {
     color: var(--primary-title-color);
 }
 
-.title {}
-
 .team-list {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 120px;
 }
 
 .team-list-title {
@@ -362,9 +343,6 @@ span {
     text-align: center;
     letter-spacing: 0.02em;
 }
-
-.text {}
-
 /**----------------------------< !-- Подвал страницы -->--------------------**/
 .footer {
     background-color: var(--primary-background2-color);
@@ -375,12 +353,6 @@ span {
     max-width: 264;
     height: 112px;
 }
-
-.footer {}
-
-.logo {}
-
-.link {}
 
 .footer-span,
 .footer-text {
@@ -394,7 +366,6 @@ span {
     font-size: 16px;
     line-height: 1.5;
     /* or 150% */
-
     letter-spacing: 0.02em;
 }
 
@@ -432,7 +403,6 @@ span {
     flex-grow: 0;
 }
 
-
 .portfolio-button:hover,
 .portfolio-button:focus {
     color: #FFFFFF;
@@ -440,14 +410,8 @@ span {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/**--------------------Портфолио-------------**/
-.portfolio {}
+/**----------------Карточки-------------**/
 
-.portfolio-section {}
-
-.page-nav {}
-
-.portfolio-button {}
 
 .portfolio-list {
     display: flex;
@@ -459,8 +423,6 @@ span {
 .product-list-item {
     width: calc ((100% -48px) / 3);
 }
-
-.link {}
 
 .portfolio-text-item {
     padding-top: 32px;
@@ -480,8 +442,6 @@ span {
     letter-spacing: 0.02em;
 }
 
-.title {}
-
 .portfolio-text {
     color: var(--primary-text-color);
     font-weight: 400;
@@ -489,5 +449,3 @@ span {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-
-.text {}
