@@ -23,13 +23,20 @@ body {
     font-family: "Roboto", sans-serif;
     color: var(--primary-text-color);
 }
-
 .list {
     list-style: none;
 }
 
 .link {
     text-decoration: none;
+}
+.link:hover,
+.link:focus {
+    color: #404bbf;
+}
+
+.title {
+    color: var(--primary-title-color);
 }
 
 .text {
@@ -42,7 +49,6 @@ body {
     padding: 0 15px;
     margin: 0 auto;
 }
-
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -91,30 +97,9 @@ img {
 .header {
     border-bottom: 1px solid #E7E9FC;
 }
-
 .header-content {
-    padding-left: 15px;
-    padding-right: 15px;
     display: flex;
     align-items: center;
-}
-
-.nav-box {
-    display: flex;
-    align-items: center;
-}
-
-.navigation-list {
-    display: flex;
-    align-items: center;
-    margin-left: 76px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    gap: 40px;
-}
-
-.navigation-list a {
-    color: var(--primary-title-color);
 }
 
 .logo {
@@ -125,17 +110,24 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.logo a {
-    padding-left: 156px;
 }
 
 span {
     color: #2e2f42;
 }
+.nav-box {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-list {
+    display: flex;
+    align-items: center;
+    margin-left: 76px;
+    gap: 40px;
+}
+.navigation-item-link{
+    color: var(--primary-title-color);}
 
 .navigation-list {
     font-weight: 500;
@@ -145,10 +137,7 @@ span {
 }
 
 
-.link:hover,
-.link:focus {
-    color: #404bbf;
-}
+
 
 .address {
     margin-left: auto;
@@ -168,11 +157,6 @@ span {
     padding-top: 24px;
     padding-bottom: 24px
 }
-.address a:hover,
-.address a:focus {
-    color: #404bbf
-}
-
 /**--------------- Херо секция -------------**/
 .hero {
     background-color: #2e2f42;
@@ -277,7 +261,6 @@ span {
 .product-list {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 120px;
 }
 
 .product-list-item {
@@ -293,16 +276,6 @@ span {
 .team-title {
     
     padding-bottom: 72px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    /* identical to box height, or 111% */
-
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--primary-title-color);
 }
 
 .team-list {
@@ -335,11 +308,9 @@ span {
 
 .team-text {
     padding-bottom: 32px;
-    color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.5;
     /* identical to box height, or 150% */
-
     text-align: center;
     letter-spacing: 0.02em;
 }
@@ -443,7 +414,6 @@ span {
 }
 
 .portfolio-text {
-    color: var(--primary-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
