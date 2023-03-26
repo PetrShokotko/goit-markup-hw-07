@@ -41,8 +41,8 @@ body {
 /**Контейнера компоненты**/
 .container {
     max-width: 1158px;
-padding: 0 15px;
-margin: 0 auto;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .section-title {
@@ -92,7 +92,9 @@ img {
 /**- Шапка страницы -**/
 .header {
     border-bottom: 1px solid #E7E9FC;
-}.header-content {
+}
+
+.header-content {
     padding-left: 15px;
     padding-right: 15px;
     display: flex;
@@ -112,6 +114,7 @@ img {
     padding-bottom: 15px;
     gap: 40px;
 }
+
 .navigation-list a {
     color: var(--primary-title-color);
 }
@@ -127,10 +130,15 @@ img {
     padding-top: 15px;
     padding-bottom: 15px;
 }
-.logo a{padding-left: 156px;}
+
+.logo a {
+    padding-left: 156px;
+}
+
 span {
     color: #2e2f42;
 }
+
 .navigation-list {
     font-weight: 500;
     font-size: 16px;
@@ -143,6 +151,7 @@ span {
 .link:focus {
     color: #404bbf;
 }
+
 .address {
     margin-left: auto;
     font-style: normal;
@@ -152,11 +161,12 @@ span {
     display: flex;
     gap: 40px;
 }
-.address-item{
-display: block;
 
-padding-top: 24px;
-padding-bottom: 24px
+.address-item {
+    display: block;
+
+    padding-top: 24px;
+    padding-bottom: 24px
 }
 
 
@@ -166,6 +176,7 @@ padding-bottom: 24px
     letter-spacing: 0.02em;
     color: #434455;
 }
+
 .address a:hover,
 .address a:focus {
     color: #404bbf
@@ -197,7 +208,7 @@ padding-bottom: 24px
 
 .hero-button {
 
-display: inline-block;
+    display: inline-block;
     padding: 16px 32px 16px 32px;
 
     font-family: "Roboto", sans-serif;
@@ -206,7 +217,8 @@ display: inline-block;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
-    background-color: #4D5AE5;;
+    background-color: #4D5AE5;
+    ;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
@@ -230,7 +242,10 @@ display: inline-block;
     display: flex;
     justify-content: space-between;
 }
-.features-list-item{max-width: 264px;}
+
+.features-list-item {
+    max-width: 264px;
+}
 
 .features-list-title {
     margin-bottom: 8px;
@@ -255,7 +270,9 @@ display: inline-block;
 .text {}
 
 /**----------- < !-- Продукты компании --> --------**/
-.product {padding-bottom: 120px;}
+.product {
+    padding-bottom: 120px;
+}
 
 .product-title {
     margin-bottom: 72px;
@@ -283,6 +300,7 @@ display: inline-block;
 }
 
 .title {}
+
 /**---------------< !-- фотографии сотрудников компании -->------------**/
 .team {
     background-color: #F4F4FD
@@ -291,7 +309,7 @@ display: inline-block;
 .team-title {
     padding-top: 120px;
     padding-bottom: 72px;
-    
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -310,6 +328,7 @@ display: inline-block;
     justify-content: space-between;
     padding-bottom: 120px;
 }
+
 .team-list-title {
     margin-top: 32px;
     margin-bottom: 8px;
@@ -345,12 +364,17 @@ display: inline-block;
 }
 
 .text {}
+
 /**----------------------------< !-- Подвал страницы -->--------------------**/
 .footer {
     background-color: var(--primary-background2-color);
     padding: 100px 0;
 }
-.footer-container{max-width: 264;height: 112px;}
+
+.footer-container {
+    max-width: 264;
+    height: 112px;
+}
 
 .footer {}
 
@@ -425,19 +449,26 @@ display: inline-block;
 
 .portfolio-button {}
 
-.portfolio-list {display: flex;
+.portfolio-list {
+    display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
 
 }
-.product-list-item{width: calc ((100%  -48px) / 3);}
+
+.product-list-item {
+    width: calc ((100% -48px) / 3);
+}
 
 .link {}
-.portfolio-text-item{padding-top: 32px;
+
+.portfolio-text-item {
+    padding-top: 32px;
     padding-left: 16px;
     padding-bottom: 32px;
-    border: 1px solid  #e7e9fc;
-    border-top: none;}
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
 
 .portfolio-list-title {
     margin-bottom: 8px;
