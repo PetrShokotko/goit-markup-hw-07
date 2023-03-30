@@ -16,6 +16,7 @@
     --primary-title-color: #2E2F42;
     --primary-background2-color: #2E2F42;
     --primary-footer-text-color: #f4f4fd;
+    --bg-gradient: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
 }
 
 body {
@@ -159,12 +160,18 @@ span {
 }
 /**--------------- Херо секция -------------**/
 .hero {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #2e2f42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    background-image: var(--bg-gradient), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+    max-width: 1440px;
+    height: 600px;
+    
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
@@ -225,6 +232,16 @@ span {
     max-width: 264px;
 }
 
+.features-icon-div{display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    background: #F4F4FD;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
 .features-list-title {
     margin-bottom: 8px;
 
@@ -280,22 +297,15 @@ span {
 
 .team-title {
     
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .team-list {
     display: flex;
-    justify-content: space-between;
+    gap: 24px;
+    text-align: center;
 }
-
-.team-list-title {
-    margin-top: 32px;
-    margin-bottom: 8px;
-}
-
-
 .team-list-item {
-    width: calc(25% - 24px);
     background-color: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -306,19 +316,75 @@ span {
     font-size: 20px;
     line-height: 1.2;
     /* identical to box height, or 120% */
-    text-align: center;
     letter-spacing: 0.02em;
     color: var(--primary-title-color);
+    margin-bottom: 8px;
 }
-
 .team-text {
-    padding-bottom: 32px;
+    margin-bottom: 8px;
     font-size: 16px;
     line-height: 1.5;
     /* identical to box height, or 150% */
-    text-align: center;
     letter-spacing: 0.02em;
 }
+.team-item-wrap {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.team-social-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 0 16px;
+}
+
+.team-social-item {
+    width: 40px;
+    height: 40px;
+}
+
+.team-social-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+/**----------------------------<Customers>----------------------**/
+.section-customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.cutomers-item-div {
+    display: flex;
+    justify-content: center
+}
+
+.customers-title {margin-bottom: 72px;}
+
+.customers-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+}
+
+.customers-list-item {
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+
+
+}
+
+.customers-link {width: 100%;
+height: 100%;display: flex;align-items: center;justify-content: center;
+}
+
 /**----------------------------< !-- Подвал страницы -->--------------------**/
 .footer {
     background-color: var(--primary-background2-color);
@@ -326,9 +392,8 @@ span {
 }
 
 .footer-container {
-    max-width: 264;
-    height: 112px;
-}
+;}
+
 
 .footer-span,
 .footer-text {
@@ -344,6 +409,28 @@ span {
     /* or 150% */
     letter-spacing: 0.02em;
 }
+
+.footer-links-div {display: flex
+;}
+
+.footer-social-title {color: #FFFFFF;
+margin-bottom: 16px;}
+
+.footer-social-list {display: flex;
+    justify-content: center;
+gap:16px;}
+
+.footer-socia-item {width: 40px; height: 40px;}
+
+.footer-social-link {width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+.footer-social-icon {}
 
 /**----------------------Portfolio-----------------**/
 /**Кнопки**/
