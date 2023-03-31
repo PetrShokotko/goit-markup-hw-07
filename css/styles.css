@@ -34,7 +34,7 @@ body {
 }
 .link:hover,
 .link:focus {
-    color: #404bbf;
+    color: var(--accent-color-link);
 }
 
 .title {
@@ -383,8 +383,6 @@ span {
 .customers-list-item {
     width: 168px;
     height: 88px;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
 }
 
 .customers-link {
@@ -394,16 +392,15 @@ span {
     align-items: center;
     justify-content: center;
     color: #8E8F99;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
 }
 .customers-icon {
     fill: currentColor;
 }
 
-.customers-icon:hover,
-.customers-icon:focus{fill: var(--accent-color-link);}
-
-.customers-list-item:hover,
-.customers-list-item:focus {border:1px solid var(--accent-color-link);
+.customers-link:hover,
+.customers-link:focus{border-color:var(--accent-color-link);
 }
 
 /**----------------------------< footer  -->--------------------**/
