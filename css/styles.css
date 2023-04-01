@@ -502,11 +502,11 @@ gap:16px;}
     gap: 48px 24px;
 
 }
-
+/*
 .product-list-item {
     width: calc ((100% -48px) / 3);
 }
-
+*/
 
 .portfolio-text-item {
     padding-top: 32px;
@@ -533,5 +533,5 @@ gap:16px;}
     letter-spacing: 0.02em;
 }
 
-.portfolio-text-item:hover,
-.portfolio-text-item:focus{box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}
+.portfolio-list-item:hover,
+.portfolio-list-item:focus{box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}
