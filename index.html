@@ -329,7 +329,7 @@
                                 <use href="./images/icons.svg#icon-instagram-2"></use>
                             </svg>
                         </a></li>
-                    <li class="footer-social-item"><a class="footer-social-link" href="">
+                    <li class="footer-social-item"><a class="footer-social-link" href=""pal>
                             <svg class="footer-social-icon" width="24px" height="24px">
                                 <use href="./images/icons.svg#icon-twitter-1"></use>
                             </svg>
@@ -348,10 +348,41 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal >
-        <div class="modal"><button type="button" data-modal-close class="btn-close-modal"><svg class="svg-close-modal" width="8px" height="8px"><use href="./images/icons.svg#icon-close-btn-modal"></use></svg></button></div>
-    </div>
+    <!---------------Backdrop------------------>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal"><button type="button" data-modal-close class="btn-close-modal"><svg class="svg-close-modal"
+                    width="8px" height="8px">
+                    <use href="./images/icons.svg#icon-close-btn-modal"></use>
+                </svg></button>
+            <p class="modal-title">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+                <label class="modal-label" for="user-name"><span class="input-label-span">Name</span>
+                    <span class="input-wrap">
+                        <input type="text" placeholder="" name="user-name" class="modal-input" id="user-name" required><svg class="modal-icon"
+                            width="18px" height="18px">
+                            <use href="./images/icons.svg#icon-persona-input"></use>
+                        </svg></span></label>
+                <label class="modal-label" for="user-tel"><span class="input-label-span">Phone</span><span class="input-wrap">
+                        <input type="tel" placeholder="" name="user-tel" class="modal-input" id="user-tel" required><svg class="modal-icon"
+                            width="18px" height="24px">
+                            <use href="./images/icons.svg#icon-phone-input"></use>
+                        </svg></span></label>
+                <label class="modal-label" for="user-email"><span class="input-label-span">Email</span>
+                    <span class="input-wrap"><input type="email" placeholder="" name="user-email" class="modal-input"
+                            id="user-email"><svg class="modal-icon" width="18px" height="24px">
+                            <use href="./images/icons.svg#icon-email-input"></use>
+                        </svg></span></label>
+                <label class="modal-label" for="user-text"><span class="input-label-span">Comment</span>
+                    <textarea name="user-text" id="user-text" class="modal-textarea" placeholder="Text input"></textarea></label>
+                    <div class="modal-field">
+                        <input type="checkbox" checked name="privacy" id="privacy" class="input-check visually-hidden" value="true">
+                        <label for="privacy" class="check-text"><span><svg  class="check-icon"
+                            width="10px" height="8px"><use href="./images/icons.svg#icon-checkbox"></use></svg></span> accept the terms and conditions of the<a href="" class="check-text-link">Privacy Policy</a></label>
+                    </div>
+                <button class="modal-button" type="submit">Send</button>
+            </form>
+        </div>
     <script src="./js/modal.js"></script>
-</body>
-
-</html>
+    </body>
+    
+    </html>
