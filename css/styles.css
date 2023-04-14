@@ -473,7 +473,10 @@ span {
 .footer-text {
     color: var(--primary-footer-text-color);
 }
-.footer-wrap-about a{margin-bottom: 17.5px;}
+
+.footer-wrap-about a {
+    margin-bottom: 17.5px;
+}
 
 .footer-text {
     width: 264px;
@@ -499,7 +502,8 @@ span {
     margin-right: 80px;
 }
 
-.footer-social-title ,.footer-subscribe-title{
+.footer-social-title,
+.footer-subscribe-title {
     color: #FFFFFF;
     margin-bottom: 16px;
 }
@@ -546,6 +550,7 @@ span {
     margin-right: 24px;
     padding-left: 16px;
 }
+
 .footer-subscribe-input::placeholder {
     align-items: center;
     font-family: 'Roboto';
@@ -579,10 +584,12 @@ span {
 .footer-subscribe-button:focus {
     background-color: #404BBF;
 }
+
 .footer-subscribe-button span {
     display: inline-flex;
     margin-left: 16px;
 }
+
 /**----------------------Portfolio-----------------**/
 /**Кнопки**/
 .portfolio-section {
@@ -701,6 +708,7 @@ span {
 .portfolio-list-itme:focus .portfolio-overlay {
     transform: translate(0, 0);
 }
+
 /**----------------------backdrop--------------------**/
 .backdrop {
     width: 100%;
@@ -737,7 +745,7 @@ span {
     display: block;
     margin-left: auto;
     cursor: pointer;
-    transition: background-color,var(--transition-duration-function), border var(--transition-duration-function);
+    transition: background-color, var(--transition-duration-function), border var(--transition-duration-function);
 }
 
 .svg-close-modal:hover,
@@ -777,8 +785,14 @@ span {
     padding-left: 38px;
     transition: border-color, var(--transition-duration-function);
 }
-.modal-input:focus{border-color: #4D5AE5;}
-.modal-input:focus + .modal-icon{fill: #4D5AE5;}
+
+.modal-input:focus {
+    border-color: #4D5AE5;
+}
+
+.modal-input:focus+.modal-icon {
+    fill: #4D5AE5;
+}
 
 
 .modal-button {
@@ -806,10 +820,12 @@ span {
     margin-right: auto;
 
 }
+
 .modal-button:hover,
 .modal-button:focus {
     background-color: #404bbf;
 }
+
 .modal-label .input-label-span {
     display: block;
     margin-bottom: 4px;
@@ -818,7 +834,9 @@ span {
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    color: #8E8F99;}
+    color: #8E8F99;
+}
+
 .input-wrap {
     position: relative;
 }
@@ -831,7 +849,8 @@ span {
     transition: fill, var(--transition-duration-function);
 }
 
-.modal-textarea{width: 100%;
+.modal-textarea {
+    width: 100%;
     height: 120px;
     outline: transparent;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -840,8 +859,11 @@ span {
     padding: 8px;
     resize: none;
 }
-.modal-textarea:focus{
-        border-color: #4D5AE5;}
+
+.modal-textarea:focus {
+    border-color: #4D5AE5;
+}
+
 .modal-textarea::placeholder {
     padding-left: 8px;
     font-family: 'Roboto';
@@ -851,6 +873,7 @@ span {
     line-height: 14px;
     color: rgba(46, 47, 66, 0.4)
 }
+
 .check-text {
     display: flex;
     align-items: center;
@@ -863,6 +886,7 @@ span {
     color: #8E8F99;
     margin-bottom: 24px;
 }
+
 .check-text span {
     width: 16px;
     height: 16px;
@@ -875,16 +899,22 @@ span {
     fill: transparent;
     transition: fill, background-color, var(--transition-duration-function);
 }
-.check-text a{color: #4D5AE5;}
+
+.check-text a {
+    color: #4D5AE5;
+}
+
 .input-check:checked+.check-text span {
     background: #404BBF;
     border: 1px solid #404BBF;
     border-radius: 2px;
     fill: #F4F4FD;
 }
+
 .check-text-link {
     margin-left: 2px;
 }
+
 /*.check-text::before {
     content: "";
     width: 16px;
