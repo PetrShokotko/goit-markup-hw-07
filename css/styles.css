@@ -736,24 +736,22 @@ span {
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0);
 }
-
 .btn-close-modal {
-        position: absolute;
-            top: 24px;
-            right: 24px;
-            display: flex;
-            padding: 0;
-            justify-content: center;
-            align-items: center;
-            width: 24px;
-            height: 24px;
-            background-color: #e7e9fc;
-            border: 1px solid rgba(0, 0, 0, 0.1);
-            border-radius: 50%;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
     cursor: pointer;
     transition: background-color, var(--transition-duration-function), border var(--transition-duration-function);
 }
-
 .svg-close-modal:hover,
 .btn-close-modal:hover {
     fill: #FFFFFF;
