@@ -41,7 +41,52 @@
                             111-11-11</a></li>
                 </ul>
             </address>
+            <button type="button" data-menu-open class="mobile-menu-open"><svg class="mobile-menu-open_icon" width="32px" height="22px">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg></button>
         </div>
+        <div data-menu class="mobile-menu is-hidden"><div><button type="button" data-menu-close class="mobile-close-btn"><svg class="mobile-close-icon" width="8px" height="8px">
+                <use href="./images/icons.svg#icon-close-btn-modal"></use>
+            </svg></button>
+            <nav>
+            <ul class="mobile-list list">
+                <li class="navigation-item"><a href="./index.html" class="mobile-accent link">Studio</a></li>
+                <li class="navigation-item"><a href="./portfolio.html" class="navigation-item-link-mobile link">Portfolio</a>
+                </li>
+                <li class="navigation-item"><a href="" class="navigation-item-link-mobile link">Contacts</a></li>
+            </ul>
+            </nav>
+            </div>
+            <div>
+                <address>
+            <ul class="address-list-mobile list">
+                <li class="address-item-list-mobile"><a href="tel:+110001111111" class="address-link-mobile-tel link">+11 (000)
+                        111-11-11</a></li>
+                <li class="address-item-list-mobile"><a href="mailto:info@devstudio.com" class="address-link-mobile-email link">info@devstudio.com</a>
+                </li>
+            </ul></address>
+        <ul class="mobile-social-list list">
+            <li class="mobile-social-item"><a class="mobile-social-link" href="">
+                    <svg class="mobile-social-icon" width="24px" height="24px">
+                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                </a></li>
+            <li class="mobile-social-item"><a class="mobile-social-link" href="" pal>
+                    <svg class="mobile-social-icon" width="24px" height="24px">
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                </a></li>
+            <li class="mobile-social-item"><a class="mobile-social-link" href="">
+                    <svg class="mobile-social-icon" width="24px" height="24px">
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                </a></li>
+            <li class="mobile-social-item"><a class="mobile-social-link" href="">
+                    <svg class="mobile-social-icon" width="24px" height="24px">
+                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                </a></li>
+        </ul></div></div>
     </header>
     <!-- Hero секция -->
     <main>
@@ -109,12 +154,20 @@
             <div class="container">
                 <h2 class="product-title section-title">What are we doing</h2>
                 <ul class="product-list list">
-                    <li class="product-list-item"><img src="./images/computer.jpg" alt="Computer image" width="360">
+                    <li class="product-list-item">
+                        <picture>
+                            <source srcset="./images/computer.jpg 1x,
+                                            ./images/computer-2x.jpg 2x" media="(min-width: 1200px)"/>
+                        <img src="./images/computer.jpg" alt="Computer image" width="360"></picture>
                     </li>
-                    <li class="product-list-item"><img src="./images/mobile.jpg" alt="Mobile with some app" width="360">
+                    <li class="product-list-item"><picture>
+                        <source srcset="./images/mobile.jpg 1x,
+                                                                ./images/mobile-2x.jpg 2x" media="(min-width: 1200px)" /><img src="./images/mobile.jpg" alt="Mobile with some app" width="360"></picture>
                     </li>
-                    <li class="product-list-item"><img src="./images/app.jpg"
-                            alt="Some app on the phone in front of the computer" width="360"></li>
+                    <li class="product-list-item"><picture>
+                        <source srcset="./images/app.jpg 1x,
+                                                                ./images/app-2x.jpg 2x" media="(min-width: 1200px)" /><img src="./images/app.jpg"
+                            alt="Some app on the phone in front of the computer" width="360"></picture></li>
                 </ul>
             </div>
         </section>
@@ -123,8 +176,10 @@
             <div class="team-container container">
                 <h2 class="team-title section-title">Our Team</h2>
                 <ul class="team-list list">
-                    <li class="team-list-item"><img src="./images/mark.jpg" alt="Mark Guerrero Product designer"
-                            width="264">
+                    <li class="team-list-item"><picture>
+                        <source srcset="./images/mark.jpg 1x,
+                                                                ./images/mark-2x.jpg 2x"/><img src="./images/mark.jpg" alt="Mark Guerrero Product designer"
+                            width="264"></picture>
                         <div class="team-item-wrap">
                             <h3 class="team-list-title title">Mark Guerrero</h3>
                             <p class="team-text text">Product Designer</p>
@@ -160,8 +215,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team-list-item"><img src="./images/tom.jpg" alt="Tom Ford Frontend Developer"
-                            width="264">
+                    <li class="team-list-item"><picture>
+                        <source srcset="./images/tom.jpg 1x,
+                                                                                    ./images/tom-2x.jpg 2x" /><img src="./images/tom.jpg" alt="Tom Ford Frontend Developer"
+                            width="264"></picture>
                         <div class="team-item-wrap">
                             <h3 class="team-list-title title">Tom Ford</h3>
                             <p class="team-text text">Frontend Developer</p>
@@ -196,7 +253,9 @@
                                 </li>
                             </ul>
                         </div>
-                    <li class="team-list-item"><img src="./images/camila.jpg" alt="Camila Garcia Marketing" width="264">
+                    <li class="team-list-item"><picture>
+                        <source srcset="./images/camila.jpg 1x,
+                                                                                    ./images/camila-2x.jpg 2x" /><img src="./images/camila.jpg" alt="Camila Garcia Marketing" width="264"></picture>
                         <div class="team-item-wrap">
                             <h3 class="team-list-title title">Camila Garcia</h3>
                             <p class="team-text text">Marketing</p>
@@ -232,8 +291,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team-list-item"><img src="./images/daniel.jpg" alt="Daniel Wilson UI Designer"
-                            width="264">
+                    <li class="team-list-item"><picture>
+                        <source srcset="./images/daniel.jpg 1x,
+                                                                                    ./images/daniel-2x.jpg 2x" /><img src="./images/daniel.jpg" alt="Daniel Wilson UI Designer"
+                            width="264"></picture>
                         <div class="team-item-wrap">
                             <h3 class="team-list-title title">Daniel Wilson</h3>
                             <p class="team-text text">UI Designer</p>
@@ -274,6 +335,7 @@
         </section>
         <!---------------Customers------------------>
         <section class="section-customers">
+            <div class="customers-container container">
             <h2 class="customers-title section-title">Customers</h2>
             <div class="cutomers-item-div">
                 <ul class="customers-list list">
@@ -309,13 +371,14 @@
                         </a></li>
                 </ul>
             </div>
+            </div>
         </section>
     </main>
     <!-- Подвал страницы -->
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-wrap-about">
-                <a class="logo link" href="./index.html">Web<span class="footer-span">Studio</span></a>
+                <a class="logo link footer-logo" href="./index.html">Web<span class="footer-span">Studio</span></a>
                 <p class="footer-text text">Increase the flow of customers and sales for your business with digital
                     marketing &
                     growth
@@ -399,6 +462,7 @@
             </form>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
 </body>
 
 </html>
