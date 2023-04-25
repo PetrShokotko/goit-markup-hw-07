@@ -24,9 +24,9 @@
             <nav class="nav-box">
                 <a class="logo link" href="./index.html">Web<span>Studio</span></a>
                 <ul class="navigation-list list">
-                    <li class="navigation-item"><a href="./index.html" class="navigation-item-link link">Studio</a></li>
-                    <li class="navigation-item"><a href="./portfolio.html"
-                            class="navigation-item-link link menu-after">Portfolio</a>
+                    <li class="navigation-item"><a href="./index.html"
+                            class="navigation-item-link link">Studio</a></li>
+                    <li class="navigation-item"><a href="./portfolio.html" class="navigation-item-link link menu-after">Portfolio</a>
                     </li>
                     <li class="navigation-item"><a href="" class="navigation-item-link link">Contacts</a></li>
                 </ul>
@@ -39,6 +39,60 @@
                             111-11-11</a></li>
                 </ul>
             </address>
+            <button type="button" data-menu-open class="mobile-menu-open"><svg class="mobile-menu-open_icon" width="32px"
+                    height="22px">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg></button>
+        </div>
+        <div data-menu class="mobile-menu is-hidden">
+            <div><button type="button" data-menu-close class="mobile-close-btn"><svg class="mobile-close-icon" width="8px"
+                        height="8px">
+                        <use href="./images/icons.svg#icon-close-btn-modal"></use>
+                    </svg></button>
+                <nav>
+                    <ul class="mobile-list list">
+                        <li class="navigation-item"><a href="./index.html" class="mobile-accent link">Studio</a></li>
+                        <li class="navigation-item"><a href="./portfolio.html"
+                                class="navigation-item-link-mobile link">Portfolio</a>
+                        </li>
+                        <li class="navigation-item"><a href="" class="navigation-item-link-mobile link">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <address>
+                    <ul class="address-list-mobile list">
+                        <li class="address-item-list-mobile"><a href="tel:+110001111111"
+                                class="address-link-mobile-tel link">+11 (000)
+                                111-11-11</a></li>
+                        <li class="address-item-list-mobile"><a href="mailto:info@devstudio.com"
+                                class="address-link-mobile-email link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </address>
+                <ul class="mobile-social-list list">
+                    <li class="mobile-social-item"><a class="mobile-social-link" href="">
+                            <svg class="mobile-social-icon" width="24px" height="24px">
+                                <use href="./images/icons.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a></li>
+                    <li class="mobile-social-item"><a class="mobile-social-link" href="" pal>
+                            <svg class="mobile-social-icon" width="24px" height="24px">
+                                <use href="./images/icons.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a></li>
+                    <li class="mobile-social-item"><a class="mobile-social-link" href="">
+                            <svg class="mobile-social-icon" width="24px" height="24px">
+                                <use href="./images/icons.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a></li>
+                    <li class="mobile-social-item"><a class="mobile-social-link" href="">
+                            <svg class="mobile-social-icon" width="24px" height="24px">
+                                <use href="./images/icons.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <!-- Main -->
@@ -201,54 +255,54 @@
         </section>
     </main>
     <!-- Подвал страницы -->
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-wrap-about">
-                <a class="logo link" href="./index.html">Web<span class="footer-span">Studio</span></a>
-                <p class="footer-text text">Increase the flow of customers and sales for your business with digital
-                    marketing &
-                    growth
-                    solutions.</p>
-            </div>
-            <div class="footer-wrap-social">
-                <h3 class="footer-social-title">Social media</h3>
-                <ul class="footer-social-list list">
-                    <li class="footer-social-item"><a class="footer-social-link" href="">
-                            <svg class="footer-social-icon" width="24px" height="24px">
-                                <use href="./images/icons.svg#icon-instagram-2"></use>
-                            </svg>
-                        </a></li>
-                    <li class="footer-social-item"><a class="footer-social-link" href="" pal>
-                            <svg class="footer-social-icon" width="24px" height="24px">
-                                <use href="./images/icons.svg#icon-twitter-1"></use>
-                            </svg>
-                        </a></li>
-                    <li class="footer-social-item"><a class="footer-social-link" href="">
-                            <svg class="footer-social-icon" width="24px" height="24px">
-                                <use href="./images/icons.svg#icon-facebook-1"></use>
-                            </svg>
-                        </a></li>
-                    <li class="footer-social-item"><a class="footer-social-link" href="">
-                            <svg class="footer-social-icon" width="24px" height="24px">
-                                <use href="./images/icons.svg#icon-linkedin-1"></use>
-                            </svg>
-                        </a></li>
-                </ul>
-            </div>
-            <div class="footer-subscribe">
-                <h3 class="footer-subscribe-title">Subscribe</h3>
-                <form class="subscribe-form">
-                    <label aria-label="email-input-subscribe">
-                        <input type="email" class="footer-subscribe-input" placeholder="Email"></label>
-                    <button type="submit" class="footer-subscribe-button">Subscribe<span
-                            class="footer-subscribe-wrap"><svg class="footer-subscribe-icon" width="24px" height="24px">
-                                <use href="./images/icons.svg#icon-subscribe"></use>
-                            </svg></span></button>
-
-                </form>
-            </div>
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-wrap-about">
+            <a class="logo link footer-logo" href="./index.html">Web<span class="footer-span">Studio</span></a>
+            <p class="footer-text text">Increase the flow of customers and sales for your business with digital
+                marketing &
+                growth
+                solutions.</p>
         </div>
-    </footer>
+        <div class="footer-wrap-social">
+            <h3 class="footer-social-title">Social media</h3>
+            <ul class="footer-social-list list">
+                <li class="footer-social-item"><a class="footer-social-link" href="">
+                        <svg class="footer-social-icon" width="24px" height="24px">
+                            <use href="./images/icons.svg#icon-instagram-2"></use>
+                        </svg>
+                    </a></li>
+                <li class="footer-social-item"><a class="footer-social-link" href="" pal>
+                        <svg class="footer-social-icon" width="24px" height="24px">
+                            <use href="./images/icons.svg#icon-twitter-1"></use>
+                        </svg>
+                    </a></li>
+                <li class="footer-social-item"><a class="footer-social-link" href="">
+                        <svg class="footer-social-icon" width="24px" height="24px">
+                            <use href="./images/icons.svg#icon-facebook-1"></use>
+                        </svg>
+                    </a></li>
+                <li class="footer-social-item"><a class="footer-social-link" href="">
+                        <svg class="footer-social-icon" width="24px" height="24px">
+                            <use href="./images/icons.svg#icon-linkedin-1"></use>
+                        </svg>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="footer-subscribe">
+            <h3 class="footer-subscribe-title">Subscribe</h3>
+            <form class="subscribe-form">
+                <label aria-label="email-input-subscribe">
+                    <input type="email" class="footer-subscribe-input" placeholder="Email"></label>
+                <button type="submit" class="footer-subscribe-button">Subscribe<span class="footer-subscribe-wrap"><svg
+                            class="footer-subscribe-icon" width="24px" height="24px">
+                            <use href="./images/icons.svg#icon-subscribe"></use>
+                        </svg></span></button>
+
+            </form>
+        </div>
+    </div>
+</footer>
 </body>
 
 </html>
